@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Challenge 29</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+    <form id="cep">
+        <div id="dadosEmpresa">
+            Dados da empresa
+            <br>
+            Nome:<span data-js="nome"></span>
+            Telefone:<span data-js="telefone"></span>
+        </div>       
+    </form>
+    <form id="endereco">    
+        <div id="formulario">
+            <h1>Cadastro</h1>
+            <div id="campos">
+                <label class="texto" for="URL"> Imagem: </label>
+                <input class="valor" type="text" name="URL" id="URL" data-js="URL">
+                <br>
+                <label class="texto" for="marca"> Marca: </label> 
+                <input class="valor" type="text" name="marca" id="marca" data-js="marca" maxlength="255">
+                <br>
+                <label class="texto" for="modelo"> Modelo: </label>
+                <input class="valor" type="text" name="modelo" id="modelo" data-js="modelo" maxlength="255">
+                <br>
+                <label class="texto" for="ano"> Ano: </label>
+                <input class="valor" type="text" name="ano" id="ano" data-js="ano" maxlength="255">
+                <br>
+                <label class="texto" for="placa"> Placa: </label>
+                <input class="valor" type="text" name="placa" id="placa" data-js="placa" maxlength="255">
+                <br>
+                <label class="texto" for="cor"> Cor: </label>
+                <input class="valor" type="text" name="cor" id="cor" data-js="cor" maxlength="255">
+            </div>
+            <br>
+            <button id="cad" data-js="cad_final">Cadastro</button>
+        </div>  
+        <table>
+            <thead>
+                <tr>
+                    <th>Imagem</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Ano</th>
+                    <th>Placa</th>
+                    <th>Cor</th>
+                </tr>
+            </thead>
+            <tbody data-js="tabelas">
+                
+            </tbody>
+        </table>
+    </form>      
+    <script src="challenge-29.js"></script>
+</body>
+</html>
