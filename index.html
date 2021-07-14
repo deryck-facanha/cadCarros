@@ -14,7 +14,7 @@
             Telefone:<span data-js="telefone"></span>
         </div>       
     </form>
-    <form id="endereco">    
+    <form id="endereco" onsubmit="return false;">    
         <div id="formulario">
             <h1>Cadastro</h1>
             <div id="campos">
@@ -39,9 +39,10 @@
             <br>
             <button id="cad" data-js="cad_final">Cadastro</button>
         </div>  
-        <table>
+        <table data-js="tb">
             <thead>
                 <tr>
+                    <th>Excluir</th>
                     <th>Imagem</th>
                     <th>Marca</th>
                     <th>Modelo</th>
@@ -50,7 +51,7 @@
                     <th>Cor</th>
                 </tr>
             </thead>
-            <tbody data-js="tabelas">
+            <tbody id="tbody" data-js="tabelas">
                 
             </tbody>
         </table>
